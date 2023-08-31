@@ -1,0 +1,38 @@
+.- ¿Cuál es el beneficio de usar lenguaje con tipos (Typescript)?
+
+El uso de un lenguaje con tipos, como TypeScript, tiene varios beneficios significativos en el desarrollo de software, como por ejemplo:
+
+. Detección temprana de errores, ya que permite detectar errores en la etapa de compilación del programa.
+. Mejor mantenibilidad, ya que facilita la comprensión y el flujo de datos en las aplicaciones confiando en que los cambios que se realicen no romperán otras partes del código.
+. Mejora en la calidad del código en términos de legibilidad, consistencia y claridad, debidoa la codificación más estructurada y ordenada.
+. Facilita el trabajo en equipo.
+
+.- ¿A qué se llama variable interna? ¿Por qué internas?
+
+El término "variable interna" puede tener distintas definiciones, de acuerdo al contexto en el que se este trabajando.
+Una definición general de "variable interna", podría ser que son aquellas variables que se definen y utilizan dentro de una función de código particular. Estas variables se consideran "internas" en el sentido de que solo son visibles y accesibles dentro del alcance específico en el que se definen y, no pueden ser accedidas desde fuera de ese alcance.
+Se puede definir dos tipos de variables:
+. Variables locales: Son variables definidas dentro de una función o bloque de código y solo son accesibles dentro de ese bloque. Una vez que el bloque se completa, la variable local se destruye y su valor ya no es accesible.
+. Variables globales: Son variables que se definen en el ámbito global del programa y son accesibles desde cualquier parte del código.
+
+.- Explicar la diferencia entre composición y herencia.
+
+La composición y la herencia son dos conceptos fundamentales en la programación orientada a objetos que se utilizan para establecer relaciones entre clases y reutilizar código.
+. Herencia: es un concepto en el que una clase (llamada subclase) puede heredar propiedades y comportamientos de otra clase (llamada superclase). Esto significa que la subclase puede aprovechar los atributos y métodos de la superclase. La idea es establecer una relación "es un" entre las clases.
+Por ejemplo, si tienes una clase Automóvil como superclase, puedes tener subclases como Motor, Ruedas, etc., que heredan las características básicas de un auto y luego agregan sus propias características específicas.
+
+. Composición: es un concepto en el que una clase contiene instancias de otras clases. En lugar de una relación "es un", la composición establece una relación "tiene un".
+Por ejemplo, una clase Automóvil podría contener una instancia de la clase Motor.
+
+Las diferencias que existen entre ambos conceptos son:
+. Relación: La herencia establece una relación "es un", mientras que la composición establece una relación "tiene un".
+. Flexibilidad: La herencia puede llevar a una jerarquía rígida y a veces confusa de clases. La composición permite construir objetos complejos combinando componentes de manera más flexible y modular.
+. Acoplamiento: La herencia puede crear un alto acoplamiento entre las clases, lo que significa que los cambios en una clase base pueden afectar a todas sus subclases. La composición suele conducir a un acoplamiento más bajo, ya que los componentes pueden ser reemplazados o modificados sin afectar directamente a la clase contenedora.
+. Reutilización selectiva: La composición permite una reutilización más selectiva, ya que puedes elegir qué componentes agregar a una clase. La herencia reutiliza todos los aspectos de la superclase.
+
+.- Explicar el mecanismo que provee Typescript para manejar casos en donde los parámetros que le llegan a un método son inválidos.
+
+TypeScript utiliza la anotación de tipos y la verificación de tipos para manejar casos en los que los parámetros que llegan a un método son inválidos.
+. Se pueden especificar los tipos de datos que se esperan para cada parámetro de un método utilizando anotaciones de tipos.
+. Analizar las anotaciones de tipos y realizar comprobaciones para asegurarse de que el código se corresponda con los tipos especificados. Si hay discrepancias entre los tipos esperados y los tipos reales de los valores proporcionados, el compilador generará errores.
+. Utilización de excepciones o valores especiales para indicar que ocurrió un problema.
